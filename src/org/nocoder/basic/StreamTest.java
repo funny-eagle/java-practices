@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * @author yangjinlong
  */
-public class InputStreamReaderTest {
+public class StreamTest {
 
     public static void main(String[] args){
         /*
