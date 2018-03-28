@@ -18,20 +18,6 @@ public class StreamTest {
     }
 
     /**
-     * 使用BufferedReader读取控制台输入的内容
-     */
-    public static void testBufferedReader() {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("随便输入点什么吧...");
-        try {
-            String str = reader.readLine();
-            System.out.println("您输入了 " + str);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * 使用InputStreamReader类读取文件中的内容
      */
     public static void testInputStream(){
@@ -48,6 +34,20 @@ public class StreamTest {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 使用BufferedReader读取控制台输入的内容
+     */
+    public static void testBufferedReader() {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("随便输入点什么吧...");
+        try {
+            String str = reader.readLine();
+            System.out.println("您输入了 " + str);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
