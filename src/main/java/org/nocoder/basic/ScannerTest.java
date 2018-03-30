@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @date 18/3/25.
  */
 public class ScannerTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double d1 = input.nextDouble();
         System.out.println(d1);

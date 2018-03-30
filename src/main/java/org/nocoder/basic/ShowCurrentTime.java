@@ -1,11 +1,13 @@
 package org.nocoder.basic;
+
 /**
  * 通过System.currentTimeMillis()得到当前北京时间
+ *
  * @author jason
  * @date 18/3/24.
  */
 public class ShowCurrentTime {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 获取自1970年1月1日 0:00:00 至当前时刻的毫秒数,格林威治时间
         long totalMilliseconds = System.currentTimeMillis();
 

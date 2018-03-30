@@ -7,7 +7,8 @@ package org.nocoder.solution;
 public class ListNode {
     int val;
     ListNode next = null;
-    ListNode(int val){
+
+    ListNode(int val) {
         this.val = val;
     }
 }

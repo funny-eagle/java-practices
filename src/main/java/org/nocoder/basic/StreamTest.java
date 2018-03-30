@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class StreamTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /*
             InputStreamReader
             BufferedReader
@@ -20,12 +20,12 @@ public class StreamTest {
     /**
      * 使用InputStreamReader类读取文件中的内容
      */
-    public static void testInputStream(){
+    public static void testInputStream() {
         try {
             InputStreamReader isr = new InputStreamReader(new FileInputStream("note.txt"), "UTF8");
             try {
                 System.out.println(isr.getEncoding());
-                char [] chars = new char[1024];
+                char[] chars = new char[1024];
                 int length = isr.read(chars);
                 System.out.println(new String(chars, 0, length));
             } catch (IOException e) {
