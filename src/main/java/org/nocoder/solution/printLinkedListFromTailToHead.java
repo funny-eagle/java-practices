@@ -7,7 +7,7 @@ import java.util.Stack;
  * 输入一个链表，从尾到头打印链表每个节点的值。
  * Created by YANGJINLONG on 2018-3-29.
  */
-public class printLinkedListFromTailToHead {
+public class PrintLinkedListFromTailToHead {
 
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         // 栈是LIFO结构
