@@ -13,20 +13,20 @@ public class PrintLinkedListFromTailToHead {
         // 栈是LIFO结构
         Stack<Integer> stack = new Stack<Integer>();
 
-        while(listNode != null){
+        while (listNode != null) {
             stack.push(listNode.val);
             listNode = listNode.next;
         }
 
         ArrayList<Integer> list = new ArrayList<Integer>();
 
-        while(!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             list.add(stack.pop());
         }
         return list;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
 }
