@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * 输入一个链表，从尾到头打印链表每个节点的值。
- * Created by YANGJINLONG on 2018-3-29.
+ * @author YANGJINLONG on 2018-3-29.
  */
 public class PrintLinkedListFromTailToHead {
 
