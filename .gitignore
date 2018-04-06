@@ -34,3 +34,12 @@ JavaProgramming.iml
 .idea/copyright/profiles_settings.xml
 .idea/compiler.xml
 .idea/.name
+.idea/uiDesigner.xml
+target/classes/org/nocoder/array/CopyArray.class
+target/classes/org/nocoder/basic/Loop.class
+target/classes/org/nocoder/solution/BinarySearch.class
+target/classes/org/nocoder/thread/Client.class
+target/classes/org/nocoder/thread/CustomeThread.class
+target/classes/org/nocoder/thread/PrintChar.class
+target/classes/org/nocoder/thread/PrintNumber.class
+target/classes/org/nocoder/thread/TaskThreadDemo.class
