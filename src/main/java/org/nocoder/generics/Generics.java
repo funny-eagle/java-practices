@@ -4,6 +4,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 泛型
+ */
 public class Generics {
     public static void main(String[] args) {
         Pair<String, Object> p1 = new Pair<>("a", 1);

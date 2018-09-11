@@ -1,8 +1,5 @@
 package org.nocoder.solution;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 题目描述
  * 对于一个有序数组，我们通常采用二分查找的方式来定位某一元素，请编写二分查找的算法，在数组中查找指定元素。

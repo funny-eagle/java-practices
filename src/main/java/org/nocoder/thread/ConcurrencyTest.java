@@ -28,6 +28,7 @@ public class ConcurrencyTest {
     public static void calculateWithMultiThread() throws InterruptedException {
         long st = System.currentTimeMillis();
         Thread t1 = new Thread(new Runnable() {
+            @Override
             public void run() {
                 int a = 1;
                 for (int i=1; i<count; i++) {
