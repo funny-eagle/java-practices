@@ -1,0 +1,8 @@
+package org.nocoder.exception;
+
+public class MyException extends Exception {
+
+    public MyException(String message) {
+        System.out.println("MyException: " + message);
+    }
+}
