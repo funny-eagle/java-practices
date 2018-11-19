@@ -16,7 +16,8 @@ public class TestThreadPool {
                 new LinkedBlockingDeque<>(1024),
                 threadFactory,
                 new ThreadPoolExecutor.CallerRunsPolicy());
-        Thread t1 = new Thread(()->{int i = 0;
+        Thread t1 = new Thread(()->{
+            int i = 0;
             while(i < 10000){
                 executorService.execute(()->{
                     System.out.println(Thread.currentThread().getName() + " hello ");
