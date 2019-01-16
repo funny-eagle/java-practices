@@ -8,7 +8,7 @@ import java.io.*;
  */
 public class IoTest {
 	public static void main(String[] args) {
-		File file = new File("src/main/resources/小猪佩奇.txt");
+		File file = new File("src/main/resources/peppa-pig.txt");
 		readByteStreamTest(file);
 		readCharacterStreamTest(file);
 		writeByteStreamTest(file);
