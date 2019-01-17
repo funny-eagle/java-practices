@@ -7,7 +7,7 @@ import java.util.Map;
  * 遍历HashMap
  * Created by YANGJINLONG on 2018-3-30.
  */
-public class TestHashMap {
+public class IterateHashMap {
     public static void main(String[] args) {
         Map<String, Object> map = initMapData();
         iterateMapEntrySet(map);
