@@ -1,5 +1,6 @@
 package org.nocoder.map;
 /**
+ * Map put, get 功能简版实现
  * Simple map, associates keys with values
  * low efficiency, fixed size
  * @author yangjinlong
