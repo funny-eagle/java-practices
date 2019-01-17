@@ -3,6 +3,7 @@ package org.nocoder.basic;
 import java.util.Scanner;
 
 /**
+ * 格式化字符串
  * Created by YANGJINLONG on 2018-3-29.
  */
 public class FormatString {
