@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * 测试hashmap 死循环
+ */
 public class HashMapThread extends Thread {
     private static AtomicInteger ai = new AtomicInteger(0);
     private static Map<Integer, Integer> map = new HashMap<>(1);
