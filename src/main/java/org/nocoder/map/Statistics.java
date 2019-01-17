@@ -12,7 +12,7 @@ import java.util.Random;
 public class Statistics {
     public static void main(String[] args) {
         Map<Integer, Integer> countingMap = new HashMap<>();
-        Random random = new Random();
+        Random random = new Random(System.nanoTime());
         for (int i = 0; i < 10000; i++) {
             int key = random.nextInt(10);
             Integer value = countingMap.get(key);
