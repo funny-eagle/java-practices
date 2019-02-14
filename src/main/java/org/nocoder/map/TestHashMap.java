@@ -9,10 +9,15 @@ import java.util.Map;
  */
 public class TestHashMap {
     public static void main(String[] args) {
-        Map<String, Object> map = initMapData();
-        iterateMapEntrySet(map);
-        iterateMapValues(map);
-        iterateMapKeySet(map);
+        Map<String, Integer> map = new HashMap<>();
+        Object v1 = map.put("a", 1);
+        System.out.println(v1);
+        Object v2 = map.put("a", 2);
+        System.out.println(v2);
+//        Map<String, Object> map = initMapData();
+//        iterateMapEntrySet(map);
+//        iterateMapValues(map);
+//        iterateMapKeySet(map);
     }
 
     /**
