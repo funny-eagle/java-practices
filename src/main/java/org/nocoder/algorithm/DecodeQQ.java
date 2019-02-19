@@ -13,7 +13,7 @@ package org.nocoder.algorithm;
 public class DecodeQQ {
     public static void main(String[] args) {
         int[] arr = new int[]{6, 3, 1, 7, 5, 8, 9, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        // 队列头
+        // 队首
         int head = 0;
         // 队列尾指向队尾指向后一个位置
         int tail = 9;
