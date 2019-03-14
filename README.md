@@ -1,1 +1,17 @@
 # java_practices
+
+- [algorithm](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [array](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [basic](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [codereview](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [equals](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [exception](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [integer](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [io](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [log](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [map](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [nio](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [socket](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [solution](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [thread](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
+- [utils](https://github.com/yangjinlong86/java_practices/tree/master/src/main/java/org/nocoder)
