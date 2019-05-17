@@ -1,4 +1,4 @@
-package org.nocoder.array;
+package org.nocoder.algorithm.sort;
 
 
 /**
