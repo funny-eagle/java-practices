@@ -1,4 +1,4 @@
-package org.nocoder.solution;
+package org.nocoder.algorithm;
 
 /**
  * 链表

@@ -1,4 +1,6 @@
-package org.nocoder.solution;
+package org.nocoder.algorithm;
+
+import org.nocoder.algorithm.ListNode;
 
 import java.util.ArrayList;
 import java.util.Stack;
