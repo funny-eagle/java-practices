@@ -1,4 +1,4 @@
-package org.nocoder.algorithm.sort;
+package org.nocoder.algorithm;
 
 /**
  * 选择排序
