@@ -41,8 +41,8 @@ public class BinarySearch {
     public static void main(String[] args) {
         BinarySearch bs = new BinarySearch();
 
-        //int[] array = {10, 10, 10, 10, 10, 10, 10, 10};
-        //System.out.println(bs.getPos(array, 10));
+        int[] array = {10, 10, 10, 10, 10, 10, 10, 10};
+        System.out.println(bs.getPos(array, 10));
 
         int[] arr = {1, 2, 3, 4,10, 10, 10, 10, 10};
         System.out.println(bs.getPos(arr, 4));
