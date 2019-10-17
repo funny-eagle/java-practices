@@ -9,9 +9,6 @@ package org.nocoder.algorithm;
  * @date 2019/5/17.
  */
 public class Fibonacci {
-    public static void main(String[] args) {
-        System.out.println(fibonacci(6));
-    }
 
     public static int fibonacci(int n) {
         if(n == 0){return 0;}

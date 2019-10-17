@@ -11,16 +11,16 @@ package org.nocoder.algorithm;
  * @date 2019/2/19.
  */
 public class DecodeQQ {
-    public static void main(String[] args) {
-        int[] arr = new int[]{6, 3, 1, 7, 5, 8, 9, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    public static String decode(int[] arr) {
         // 队首
         int head = 0;
         // 队列尾指向队尾指向后一个位置
         int tail = 9;
 
+        StringBuffer qq = new StringBuffer();
         while (head < tail) {
             // 打印队首并将队首出队
-            System.out.println(arr[head]);
+            qq.append(arr[head]);
             head++;
             // 将新队首的数字添加到队尾
             arr[tail] = arr[head];
@@ -28,6 +28,6 @@ public class DecodeQQ {
             // 再将队首出队
             head++;
         }
-
+        return qq.toString();
     }
 }

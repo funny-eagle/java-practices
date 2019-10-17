@@ -7,13 +7,7 @@ package org.nocoder.algorithm;
  */
 public class BubbleSort {
 
-    public static void main(String[] args) {
-        int[] array = {2, 9, 5, 4, 8, 1, 6};
-        bubbleSort(array);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-    }
+
 
 
     public static void bubbleSort(int[] arr){
