@@ -1,4 +1,7 @@
 target/**/*
 .idea/**/*
-java_practice.iml
+*.iml
+.gradle/
+gradle/
+
 
