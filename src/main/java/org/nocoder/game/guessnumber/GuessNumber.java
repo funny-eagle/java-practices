@@ -1,5 +1,8 @@
 package org.nocoder.game.guessnumber;
 
+/**
+ * 猜数字游戏
+ */
 public class GuessNumber {
     private int number;
 
