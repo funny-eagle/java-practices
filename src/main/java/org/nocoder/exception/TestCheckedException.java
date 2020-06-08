@@ -6,6 +6,7 @@ import java.io.IOException;
 
 /**
  * checked exceptions 在编译时会被检查，
+ *
  * @author jason
  * @date 2019/6/5.
  */
@@ -14,7 +15,7 @@ public class TestCheckedException {
         FileReader fileReader = new FileReader("/Users/jason/local/github/java-practices/hello.txt");
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-        for (int i = 0; i <  3; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println(bufferedReader.readLine());
         }
 

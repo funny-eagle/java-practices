@@ -18,11 +18,11 @@ public class TestThreadPool {
                 TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(1024),
                 threadFactory, new ThreadPoolExecutor.CallerRunsPolicy());
 
-        Thread t1 = new Thread(()->{
+        Thread t1 = new Thread(() -> {
             int i = 0;
-            while(i < 10000){
-                executorService.execute(()->{
-                   logger.info("hello");
+            while (i < 10000) {
+                executorService.execute(() -> {
+                    logger.info("hello");
                 });
                 i++;
             }

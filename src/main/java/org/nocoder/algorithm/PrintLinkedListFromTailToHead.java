@@ -1,15 +1,18 @@
 package org.nocoder.algorithm;
 
-import org.nocoder.algorithm.ListNode;
-
 import java.util.ArrayList;
 import java.util.Stack;
 
 /**
  * 输入一个链表，从尾到头打印链表每个节点的值。
+ *
  * @author YANGJINLONG on 2018-3-29.
  */
 public class PrintLinkedListFromTailToHead {
+
+    public static void main(String[] args) {
+
+    }
 
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         // 栈是LIFO结构
@@ -26,10 +29,6 @@ public class PrintLinkedListFromTailToHead {
             list.add(stack.pop());
         }
         return list;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
 

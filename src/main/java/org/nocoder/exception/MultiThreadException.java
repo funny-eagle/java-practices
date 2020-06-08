@@ -7,12 +7,13 @@ import org.slf4j.LoggerFactory;
 
 public class MultiThreadException {
     private static Logger logger = LoggerFactory.getLogger(MultiThreadException.class);
-    public static void startSubThread(){
-        Thread t = new Thread(()->{
+
+    public static void startSubThread() {
+        Thread t = new Thread(() -> {
             logger.debug("start to execute...");
-            try{
+            try {
                 validateParam("");
-            }catch (Exception e){
+            } catch (Exception e) {
                 logger.error("validate error:", e);
             }
             logger.debug("execute complete!");
@@ -20,7 +21,7 @@ public class MultiThreadException {
         t.start();
     }
 
-    public static void validateParam(String param) throws IllegalArgumentException{
+    public static void validateParam(String param) throws IllegalArgumentException {
         logger.debug("start to validate param...");
         Validate.notEmpty(param);
         logger.debug("validate ok!");
@@ -36,9 +37,9 @@ public class MultiThreadException {
         startSubThread();
         logger.debug("main executing...");
         int i = 0;
-        while(i<=10){
+        while (i <= 10) {
             try {
-                logger.debug("i={}",i);
+                logger.debug("i={}", i);
                 i++;
                 Thread.sleep(500);
             } catch (InterruptedException e) {

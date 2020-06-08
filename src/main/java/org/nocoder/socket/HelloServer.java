@@ -12,7 +12,7 @@ public class HelloServer {
     private PrintWriter out;
     private BufferedReader in;
 
-    public void start(int port){
+    public void start(int port) {
 
     }
 }

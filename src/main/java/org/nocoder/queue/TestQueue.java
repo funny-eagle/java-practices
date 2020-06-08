@@ -25,7 +25,7 @@ public class TestQueue {
         System.out.println(queue.element());
 
 
-        while (queue.size() > 0){
+        while (queue.size() > 0) {
             // remove方法删除队列的头元素，如果队列为空，则抛异常
             System.out.println(queue.remove());
         }

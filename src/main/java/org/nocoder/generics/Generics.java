@@ -31,7 +31,7 @@ public class Generics {
         return clazz.getName();
     }
 
-    public static <T> List<T> importExcel(InputStream inputStream, Class<T> clazz){
+    public static <T> List<T> importExcel(InputStream inputStream, Class<T> clazz) {
         List<T> list = new ArrayList<>();
         try {
             T t = clazz.newInstance();
@@ -81,19 +81,19 @@ class Pair<K, V> {
         this.value = value;
     }
 
-    public void setKey(K key) {
-        this.key = key;
-    }
-
-    public void setValue(V value) {
-        this.value = value;
-    }
-
     public K getKey() {
         return key;
     }
 
+    public void setKey(K key) {
+        this.key = key;
+    }
+
     public V getValue() {
         return value;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
     }
 }

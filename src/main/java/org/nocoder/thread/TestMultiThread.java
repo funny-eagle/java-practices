@@ -12,6 +12,8 @@ import java.util.concurrent.*;
  * @date 2019/5/9.
  */
 public class TestMultiThread {
+    private static ExecutorService executorService = getExecutorService();
+
     public static void main(String[] args) {
         // list 初始化
         List list = new ArrayList();
@@ -85,8 +87,6 @@ public class TestMultiThread {
         });
     }
 
-    private static ExecutorService executorService = getExecutorService();
-
     private static ExecutorService getExecutorService() {
         ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("test-task-%d").build();
         ExecutorService executorService = new ThreadPoolExecutor(
@@ -100,11 +100,11 @@ public class TestMultiThread {
 
 class CallableTask implements Callable {
 
+    private Integer val;
+
     public CallableTask(Integer val) {
         this.val = val;
     }
-
-    private Integer val;
 
     @Override
     public Object call() throws Exception {

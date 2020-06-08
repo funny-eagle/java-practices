@@ -8,13 +8,24 @@ import java.util.Objects;
  */
 public class PhoneNumber {
 
+    private int prefix;
+    private int number;
     public PhoneNumber(int prefix, int number) {
         this.prefix = prefix;
         this.number = number;
     }
 
-    private int prefix;
-    private int number;
+    /**
+     * 测试方法以phoneNumber作为map的key，如果不重写hashcode方法，则结果返回为null；
+     * 重写hashcode方法后，结果返回为 Jason
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        HashMap<PhoneNumber, String> map = new HashMap<>(100);
+        map.put(new PhoneNumber(021, 80888088), "Jason");
+        System.out.println(map.get(new PhoneNumber(021, 80888088)));
+    }
 
     public int getPrefix() {
         return prefix;
@@ -47,16 +58,5 @@ public class PhoneNumber {
     @Override
     public int hashCode() {
         return Objects.hash(prefix, number);
-    }
-
-    /**
-     * 测试方法以phoneNumber作为map的key，如果不重写hashcode方法，则结果返回为null；
-     * 重写hashcode方法后，结果返回为 Jason
-     * @param args
-     */
-    public static void main(String[] args) {
-        HashMap<PhoneNumber, String> map = new HashMap<>(100);
-        map.put(new PhoneNumber(021, 80888088), "Jason");
-        System.out.println(map.get(new PhoneNumber(021, 80888088)));
     }
 }

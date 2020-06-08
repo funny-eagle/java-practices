@@ -10,6 +10,25 @@ package org.nocoder.algorithm;
  * @date 18/3/28.
  */
 public class TwoDimensionalArraySearch {
+    public static void main(String[] args) {
+//        int target = 7;
+//        int[][] array = new int[][]{
+//                {1,2,8,9},
+//                {2,4,9,12},
+//                {4,7,10,13},
+//                {6,8,11,15}
+//        };
+
+        int target = 7;
+        int[][] array = new int[][]{
+                {},
+                {}
+        };
+        System.out.println(array.length);
+        TwoDimensionalArraySearch search = new TwoDimensionalArraySearch();
+        System.out.println(search.find(target, array));
+    }
+
     /**
      * 解题思路:从矩阵的左下角开始找,遇小上移,遇大右移
      * 矩阵的左下角,就是二维数组的最后一个数组元素中的第一个元素
@@ -46,24 +65,5 @@ public class TwoDimensionalArraySearch {
             }
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-//        int target = 7;
-//        int[][] array = new int[][]{
-//                {1,2,8,9},
-//                {2,4,9,12},
-//                {4,7,10,13},
-//                {6,8,11,15}
-//        };
-
-        int target = 7;
-        int[][] array = new int[][]{
-                {},
-                {}
-        };
-        System.out.println(array.length);
-        TwoDimensionalArraySearch search = new TwoDimensionalArraySearch();
-        System.out.println(search.find(target, array));
     }
 }

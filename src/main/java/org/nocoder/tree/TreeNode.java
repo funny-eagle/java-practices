@@ -5,9 +5,6 @@ package org.nocoder.tree;
  * @date 2019/6/17.
  */
 public class TreeNode {
-    public  TreeNode(int value){
-        this.value = value;
-    }
     /**
      * 当前节点值
      */
@@ -20,6 +17,9 @@ public class TreeNode {
      * 右边子节点
      */
     private TreeNode rightSubNode;
+    public TreeNode(int value) {
+        this.value = value;
+    }
 
     public int getValue() {
         return value;

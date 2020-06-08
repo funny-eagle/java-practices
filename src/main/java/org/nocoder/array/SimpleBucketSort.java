@@ -31,9 +31,9 @@ public class SimpleBucketSort {
         int[] arr = new int[]{8, 2, 3, 2, 5, 0};
         int[] res = simpleBucketSort(arr);
         for (int i = 0; i < res.length; i++) {
-            if(i != res.length-1){
+            if (i != res.length - 1) {
                 System.out.print(res[i] + ", ");
-            }else{
+            } else {
                 System.out.print(res[i]);
             }
         }

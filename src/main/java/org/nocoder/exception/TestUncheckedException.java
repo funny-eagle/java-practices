@@ -2,9 +2,9 @@ package org.nocoder.exception;
 
 /**
  * Unchecked Exceptions 不会在编译时进行检查，不需要在方法名后使用 throws 抛出
- *
+ * <p>
  * Java中，Error 和 RuntimeException 的类都是 Unchecked Exceptions，
- *
+ * <p>
  * 其余的在 throwable 下的都是 checked exceptions
  *
  * @author jason

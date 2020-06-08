@@ -9,11 +9,11 @@ import org.slf4j.LoggerFactory;
  */
 public class LambdaThread {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(LambdaThread.class);
 
         new Thread(() -> {
-            for (int i = 0; i <100 ; i++) {
+            for (int i = 0; i < 100; i++) {
                 logger.info("i: {}", i);
             }
         }).start();

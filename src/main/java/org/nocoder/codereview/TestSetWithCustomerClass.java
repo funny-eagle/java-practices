@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * 使用Set中的元素是自定义对象时，必须重写自定义对象的equals和hashcode方法
  * 因为Set是无重复元素的集合，如果不重写equals，可能会导致出现重复数据
+ *
  * @author yangjinlong
  * created on 2018/5/31
  */
@@ -23,7 +24,7 @@ public class TestSetWithCustomerClass {
 }
 
 
-class Province{
+class Province {
     private Set<City> citySet = new HashSet<City>();
 
     public Set<City> getCitySet() {
@@ -31,7 +32,7 @@ class Province{
     }
 }
 
-class City{
+class City {
     private int id;
     private String name;
 
@@ -50,8 +51,8 @@ class City{
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof City){
-            return this.getId() == ((City)obj).getId();
+        if (obj instanceof City) {
+            return this.getId() == ((City) obj).getId();
         }
         return false;
 

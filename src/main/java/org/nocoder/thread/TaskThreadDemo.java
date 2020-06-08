@@ -10,7 +10,7 @@ package org.nocoder.thread;
  * @date 18/4/3.
  */
 public class TaskThreadDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 创建任务类
         Runnable printA = new PrintChar('a', 100);
         Runnable printB = new PrintChar('b', 100);

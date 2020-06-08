@@ -11,7 +11,7 @@ import javafx.stage.Stage;
  * @author jason
  * @date 18/4/7.
  */
-public class FlashText extends Application{
+public class FlashText extends Application {
     private String text = "";
 
 
@@ -21,7 +21,7 @@ public class FlashText extends Application{
         Label label = new Label("Programming is fun");
         pane.getChildren().add(label);
 
-        new Thread(() ->{
+        new Thread(() -> {
             try {
                 while (true) {
                     if (label.getText().trim().length() == 0) {
@@ -38,7 +38,7 @@ public class FlashText extends Application{
                     });
                     Thread.sleep(200);
                 }
-            }catch(InterruptedException ex){
+            } catch (InterruptedException ex) {
 
             }
         }).start();

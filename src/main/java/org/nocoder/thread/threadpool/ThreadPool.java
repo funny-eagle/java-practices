@@ -10,6 +10,7 @@ import java.util.concurrent.*;
  */
 public class ThreadPool {
     private static ExecutorService executorService = getExecutorService();
+
     private static ExecutorService getExecutorService() {
         ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("test-task-%d").build();
         ExecutorService executorService = new ThreadPoolExecutor(
@@ -21,7 +22,7 @@ public class ThreadPool {
 
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName() + " ");
-        executorService.execute(()->{
+        executorService.execute(() -> {
             Future future = executorService.submit(new CallableTask());
             try {
                 System.out.println(Thread.currentThread().getName() + ": 准备执行 future.get()");
@@ -37,7 +38,7 @@ public class ThreadPool {
     }
 }
 
-class CallableTask implements Callable{
+class CallableTask implements Callable {
 
     @Override
     public Object call() throws Exception {

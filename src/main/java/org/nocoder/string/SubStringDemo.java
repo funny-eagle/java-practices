@@ -7,6 +7,7 @@ public class SubStringDemo {
     /**
      * substring()方法构造一个新的字符串对象，它是给定字符串的一部分，或者称作某个字符串的子字串
      * substring()需要一个开始索引，字符在字符串中的索引是从0开始的
+     *
      * @param args
      */
     public static void main(String[] args) {

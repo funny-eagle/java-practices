@@ -1,8 +1,10 @@
 package org.nocoder.map;
+
 /**
  * Map put, get 功能简版实现
  * Simple map, associates keys with values
  * low efficiency, fixed size
+ *
  * @author yangjinlong
  */
 public class AssociativeArray<K, V> {
@@ -11,6 +13,18 @@ public class AssociativeArray<K, V> {
 
     public AssociativeArray(int length) {
         pairs = new Object[length][2];
+    }
+
+    public static void main(String[] args) {
+        AssociativeArray<String, Integer> map = new AssociativeArray<>(2);
+        try {
+            map.put("Jason", 29);
+            map.put("Freda", 26);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+        System.out.println(map);
+        System.out.println(map.get("Jason"));
     }
 
     public void put(K key, V value) {
@@ -46,17 +60,5 @@ public class AssociativeArray<K, V> {
             }
         }
         return result.toString();
-    }
-
-    public static void main(String[] args) {
-        AssociativeArray<String, Integer> map = new AssociativeArray<>(2);
-        try {
-            map.put("Jason", 29);
-            map.put("Freda", 26);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-        }
-        System.out.println(map);
-        System.out.println(map.get("Jason"));
     }
 }

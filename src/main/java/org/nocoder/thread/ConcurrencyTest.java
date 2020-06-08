@@ -2,6 +2,7 @@ package org.nocoder.thread;
 
 /**
  * 测试上下文切换的开销
+ *
  * @author YANGJINLONG
  */
 public class ConcurrencyTest {
@@ -31,7 +32,7 @@ public class ConcurrencyTest {
             @Override
             public void run() {
                 int a = 1;
-                for (int i=1; i<count; i++) {
+                for (int i = 1; i < count; i++) {
                     a++;
                 }
             }
@@ -39,29 +40,29 @@ public class ConcurrencyTest {
         t1.setName("calculateWithMultiThread");
         t1.start();
         int b = 0;
-        for(int i=0; i<count; i--){
+        for (int i = 0; i < count; i--) {
             b--;
         }
         long et = System.currentTimeMillis();
         t1.join();
-        System.out.println(et-st);
+        System.out.println(et - st);
     }
 
     /**
      * 使用单线程计算
      */
-    public static void calculateWithSingleThread(){
+    public static void calculateWithSingleThread() {
         long st = System.currentTimeMillis();
         int a = 1;
-        for (int i=1; i<count; i++) {
+        for (int i = 1; i < count; i++) {
             a++;
         }
         int b = 0;
-        for(int i=0; i<count; i--){
+        for (int i = 0; i < count; i--) {
             b--;
         }
         long et = System.currentTimeMillis();
-        System.out.println(et-st);
+        System.out.println(et - st);
     }
 
 }

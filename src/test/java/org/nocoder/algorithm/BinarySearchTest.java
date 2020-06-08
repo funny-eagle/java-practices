@@ -1,7 +1,8 @@
 package org.nocoder.algorithm;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class BinarySearchTest {
     @Test
@@ -11,7 +12,7 @@ public class BinarySearchTest {
         int[] arr1 = {10, 10, 10, 10, 10, 10, 10, 10};
         assertEquals(0, bs.getPos(arr1, 10));
 
-        int[] arr2 = {1, 2, 3, 4,10, 10, 10, 10, 10};
+        int[] arr2 = {1, 2, 3, 4, 10, 10, 10, 10, 10};
         assertEquals(3, bs.getPos(arr2, 4));
     }
 }
