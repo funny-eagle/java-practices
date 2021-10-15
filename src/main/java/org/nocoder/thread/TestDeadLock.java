@@ -57,7 +57,6 @@ public class TestDeadLock {
                 }
             }
             logger.info("{} end", Thread.currentThread().getName());
-            ;
         }
     }
 }

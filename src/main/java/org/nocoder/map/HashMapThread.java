@@ -8,8 +8,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 测试hashmap 死循环
  */
 public class HashMapThread extends Thread {
-    private static AtomicInteger ai = new AtomicInteger(0);
-    private static Map<Integer, Integer> map = new HashMap<>(1);
+    private static final AtomicInteger ai = new AtomicInteger(0);
+    private static final Map<Integer, Integer> map = new HashMap<>(1);
 
     public static void main(String[] args) {
         HashMapThread hmt0 = new HashMapThread();

@@ -10,6 +10,7 @@ public class PhoneNumber {
 
     private int prefix;
     private int number;
+
     public PhoneNumber(int prefix, int number) {
         this.prefix = prefix;
         this.number = number;

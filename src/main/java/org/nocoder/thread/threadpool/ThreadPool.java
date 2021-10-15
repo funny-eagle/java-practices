@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * @date 2019/5/7.
  */
 public class ThreadPool {
-    private static ExecutorService executorService = getExecutorService();
+    private static final ExecutorService executorService = getExecutorService();
 
     private static ExecutorService getExecutorService() {
         ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("test-task-%d").build();
@@ -44,7 +44,7 @@ class CallableTask implements Callable {
     public Object call() throws Exception {
         System.out.println(Thread.currentThread().getName() + ": callable 线程启动");
         Thread.sleep(10000);
-        String s = new String("a");
+        String s = "a";
         System.out.println(Thread.currentThread().getName() + ": callable 线程执行完毕");
         return s;
     }

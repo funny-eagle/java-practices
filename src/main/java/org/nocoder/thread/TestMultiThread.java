@@ -12,7 +12,7 @@ import java.util.concurrent.*;
  * @date 2019/5/9.
  */
 public class TestMultiThread {
-    private static ExecutorService executorService = getExecutorService();
+    private static final ExecutorService executorService = getExecutorService();
 
     public static void main(String[] args) {
         // list 初始化
@@ -100,7 +100,7 @@ public class TestMultiThread {
 
 class CallableTask implements Callable {
 
-    private Integer val;
+    private final Integer val;
 
     public CallableTask(Integer val) {
         this.val = val;

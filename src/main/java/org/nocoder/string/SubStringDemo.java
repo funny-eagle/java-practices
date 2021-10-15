@@ -24,7 +24,7 @@ public class SubStringDemo {
         // c 为字符串is
         System.out.println(c);
 
-        String d = a.substring(5, a.length());
+        String d = a.substring(5);
         System.out.println(d);
     }
 }

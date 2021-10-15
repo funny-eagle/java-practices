@@ -19,7 +19,7 @@ public class PinYinUtil {
      * @param chinese 汉字串
      * @return 汉语拼音首字母
      */
-    public static String getFirstSpell(String chinese) {
+    public static String getFirstLetters(String chinese) {
         StringBuffer pybf = new StringBuffer();
         char[] arr = chinese.toCharArray();
         HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();
@@ -48,7 +48,7 @@ public class PinYinUtil {
      * @param chinese 汉字串
      * @return 汉语拼音
      */
-    public static String getFullSpell(String chinese) {
+    public static String getFullLetters(String chinese) {
         StringBuffer pybf = new StringBuffer();
         char[] arr = chinese.toCharArray();
         HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();
@@ -69,8 +69,8 @@ public class PinYinUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(getFirstSpell("单点、登录"));
-        System.out.println(getFullSpell("单点登录"));
+        System.out.println(getFirstLetters("杨金龙"));
+        System.out.println(getFullLetters("杨金龙"));
     }
 }
 

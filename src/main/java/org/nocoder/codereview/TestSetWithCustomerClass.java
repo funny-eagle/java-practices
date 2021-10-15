@@ -25,7 +25,7 @@ public class TestSetWithCustomerClass {
 
 
 class Province {
-    private Set<City> citySet = new HashSet<City>();
+    private final Set<City> citySet = new HashSet<City>();
 
     public Set<City> getCitySet() {
         return citySet;
@@ -33,8 +33,8 @@ class Province {
 }
 
 class City {
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
 
     public City(int id, String name) {
         this.id = id;

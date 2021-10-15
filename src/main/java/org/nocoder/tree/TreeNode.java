@@ -17,6 +17,7 @@ public class TreeNode {
      * 右边子节点
      */
     private TreeNode rightSubNode;
+
     public TreeNode(int value) {
         this.value = value;
     }

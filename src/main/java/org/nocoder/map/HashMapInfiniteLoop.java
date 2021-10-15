@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class HashMapInfiniteLoop {
 
-    private static Map<Integer, Integer> map = new HashMap<>(2, 0.75f);
+    private static final Map<Integer, Integer> map = new HashMap<>(2, 0.75f);
 
     public static void main(String[] args) {
         map.put(1, 1);

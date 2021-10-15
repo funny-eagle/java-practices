@@ -7,7 +7,7 @@ package org.nocoder.thread;
  */
 public class ConcurrencyTest {
 
-    private static int count = 1000000001;
+    private static final int count = 1000000001;
 
     public static void main(String[] args) throws InterruptedException {
         /**

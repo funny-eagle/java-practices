@@ -34,12 +34,12 @@ class PrintChar implements Runnable {
     /**
      * 需要打印的字符
      */
-    private char charToPrint;
+    private final char charToPrint;
 
     /**
      * 需要打印的次数
      */
-    private int times;
+    private final int times;
 
     public PrintChar(char c, int t) {
         charToPrint = c;
@@ -60,7 +60,7 @@ class PrintNumber implements Runnable {
     /**
      * 需要打印的最大值
      */
-    private int lastNum;
+    private final int lastNum;
 
     public PrintNumber(int n) {
         lastNum = n;
