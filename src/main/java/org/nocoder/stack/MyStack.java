@@ -29,7 +29,7 @@ public class MyStack {
 
     @Override
     public String toString() {
-        return "stack:" + list.toString();
+        return "stack:" + list;
     }
 
 }
