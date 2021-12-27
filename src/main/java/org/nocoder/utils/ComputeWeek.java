@@ -1,4 +1,4 @@
-package org.nocoder.basic;
+package org.nocoder.utils;
 
 /**
  * 计算间隔期后是周几

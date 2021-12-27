@@ -1,4 +1,4 @@
-package org.nocoder.basic;
+package org.nocoder.algorithm;
 
 import java.util.Scanner;
 
