@@ -1,4 +1,4 @@
-package org.nocoder.time;
+package org.nocoder.datetime;
 
 /**
  * 通过System.currentTimeMillis()得到当前北京时间
