@@ -22,8 +22,8 @@ public class FeatureTest {
     private static class Runner implements Runnable {
         @Override
         public void run() {
-            ExecutorService excutor = Executors.newSingleThreadExecutor();
-            Future<Boolean> future = excutor.submit(new Caller());
+            ExecutorService executor = Executors.newSingleThreadExecutor();
+            Future<Boolean> future = executor.submit(new Caller());
             try {
                 System.out.println("feature get ，设置了1秒超时，抛异常");
                 future.get(1, TimeUnit.SECONDS);
