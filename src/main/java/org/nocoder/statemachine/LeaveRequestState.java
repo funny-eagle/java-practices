@@ -2,9 +2,8 @@ package org.nocoder.statemachine;
 
 
 /**
- * @author yangjl
  * @description LeaveRequestState
- * https://www.baeldung.com/java-enum-simple-state-machine
+ * @author yangjl
  * @date 2022-07-19 12:48
  **/
 public enum LeaveRequestState {
@@ -12,6 +11,7 @@ public enum LeaveRequestState {
     Submmited {
         @Override
         public LeaveRequestState nextState() {
+            System.out.println("员工向组长发起请假申请");
             return Escalated;
         }
 
@@ -24,6 +24,7 @@ public enum LeaveRequestState {
     Escalated {
         @Override
         public LeaveRequestState nextState() {
+            System.out.println("组长审批然后提交到部门主管");
             return Approved;
         }
 
@@ -36,6 +37,7 @@ public enum LeaveRequestState {
     Approved {
         @Override
         public LeaveRequestState nextState(){
+            System.out.println("部门主管审批通过，状态不再变更");
             return this;
         }
         @Override
