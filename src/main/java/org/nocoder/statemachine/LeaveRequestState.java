@@ -7,7 +7,7 @@ package org.nocoder.statemachine;
  * @date 2022-07-19 12:48
  **/
 public enum LeaveRequestState {
-    // employee submmited leave request
+    // employee submmite leave request
     Submmited {
         @Override
         public LeaveRequestState nextState() {
@@ -20,7 +20,7 @@ public enum LeaveRequestState {
             return "Employee";
         }
     },
-    // team leader approve and sacalated
+    // team leader approve and esacalate
     Escalated {
         @Override
         public LeaveRequestState nextState() {
