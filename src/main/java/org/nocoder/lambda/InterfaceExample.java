@@ -6,7 +6,7 @@ package org.nocoder.lambda;
  * @author yangjl
  * @date 2022-10-31 10:13
  **/
-public class InterfaceLambdaExample {
+public class InterfaceExample {
 
     interface Drawable{
         /**

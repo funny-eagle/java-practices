@@ -10,7 +10,7 @@ import java.util.List;
  * @description foreach loop
  * @date 2022-10-31 11:27
  **/
-public class ForeachLoopLambdaExample {
+public class ForeachLoopExample {
 
 
     public static void main(String[] args) {
