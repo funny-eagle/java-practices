@@ -8,6 +8,9 @@ package org.nocoder.lambda;
  **/
 public class InterfaceExample {
 
+    /**
+     * 没有参数
+     */
     interface Drawable{
         /**
          * draw
