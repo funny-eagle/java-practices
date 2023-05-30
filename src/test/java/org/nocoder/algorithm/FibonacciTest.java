@@ -10,8 +10,9 @@ public class FibonacciTest {
      */
     @Test
     public void fibonacci() {
-        assertEquals(8, Fibonacci.fibonacci(6));
-        assertEquals(21, Fibonacci.fibonacci(8));
-        assertEquals(34, Fibonacci.fibonacci(9));
+        Fibonacci fib = new Fibonacci();
+        assertEquals(8, fib.fibonacci(6));
+        assertEquals(21, fib.fibonacci(8));
+        assertEquals(34, fib.fibonacci(9));
     }
 }

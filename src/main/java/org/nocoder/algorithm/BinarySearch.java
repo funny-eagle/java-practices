@@ -37,4 +37,13 @@ public class BinarySearch {
         }
         return arr[low] == val ? low : -1;
     }
+
+    public static void main(String[] args) {
+        BinarySearch bs = new BinarySearch();
+        int[] arr2 = {1, 2, 3, 4, 10, 10, 10, 10, 10};
+        System.out.println(bs.getPos(arr2, 10));
+
+        int[] arr = {10, 10, 10, 10, 10, 10, 10, 10};
+        System.out.println(bs.getPos(arr, 10));
+    }
 }

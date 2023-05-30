@@ -10,7 +10,12 @@ package org.nocoder.algorithm;
  */
 public class Fibonacci {
 
-    public static int fibonacci(int n) {
+    public static void main(String[] args) {
+        Fibonacci fib = new Fibonacci();
+        System.out.println(fib.fibonacci(5));
+    }
+
+    public int fibonacci(int n) {
         if (n == 0) {
             return 0;
         }
