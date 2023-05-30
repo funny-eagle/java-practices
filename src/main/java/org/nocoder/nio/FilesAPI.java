@@ -1,8 +1,6 @@
 package org.nocoder.nio;
 
 
-import java.nio.file.*;
-
 public class FilesAPI {
 
     public static void main(String[] args) {
