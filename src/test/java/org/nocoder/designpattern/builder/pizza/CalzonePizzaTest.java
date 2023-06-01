@@ -3,7 +3,7 @@ package org.nocoder.designpattern.builder.pizza;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
-import static org.nocoder.builder.pizza.Pizza.Topping.ONION;
+import static org.nocoder.designpattern.builder.pizza.Pizza.Topping.ONION;
 
 public class CalzonePizzaTest {
 

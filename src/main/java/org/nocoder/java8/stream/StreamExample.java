@@ -1,4 +1,4 @@
-package org.nocoder.java8;
+package org.nocoder.java8.stream;
 
 import java.util.ArrayList;
 import java.util.Date;
