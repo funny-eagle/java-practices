@@ -50,12 +50,12 @@ public class TestJunit {
     }
 
     @Test
-    public void tes(){
+    public void tes() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.DAY_OF_MONTH,17);
-        calendar.set(Calendar.HOUR_OF_DAY,16);
-        calendar.set(Calendar.MINUTE,59);
-        calendar.set(Calendar.SECOND,59);
+        calendar.set(Calendar.DAY_OF_MONTH, 17);
+        calendar.set(Calendar.HOUR_OF_DAY, 16);
+        calendar.set(Calendar.MINUTE, 59);
+        calendar.set(Calendar.SECOND, 59);
         System.out.println(calendar.getTime());
         calendar.add(Calendar.HOUR, 1);
         System.out.println(calendar.getTime());

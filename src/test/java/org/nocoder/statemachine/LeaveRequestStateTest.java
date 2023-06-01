@@ -1,25 +1,26 @@
 package org.nocoder.statemachine;
 
 import org.junit.Test;
+import org.nocoder.designpattern.statemachine.LeaveRequestState;
 
 import static org.junit.Assert.assertEquals;
 
 public class LeaveRequestStateTest {
 
     @Test
-    public void testEscalated(){
+    public void testEscalated() {
         LeaveRequestState state = LeaveRequestState.Escalated;
         assertEquals("Team Leader", state.responsiblePerson());
     }
 
     @Test
-    public void testApproved(){
+    public void testApproved() {
         LeaveRequestState state = LeaveRequestState.Approved;
         assertEquals("Department Manager", state.responsiblePerson());
     }
 
     @Test
-    public void testStateMachine(){
+    public void testStateMachine() {
         LeaveRequestState state = LeaveRequestState.Submmited;
 
         state = state.nextState();

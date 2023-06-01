@@ -23,8 +23,8 @@ public class StreamExample {
 
         // sequential stream
         Stream<Integer> sequentialStream = list.stream();
-        Stream<Integer> highNumsSeq = sequentialStream.filter( s -> s > 90);
-        highNumsSeq.forEach(s -> System.out.println("High Nums sequential = "+s));
+        Stream<Integer> highNumsSeq = sequentialStream.filter(s -> s > 90);
+        highNumsSeq.forEach(s -> System.out.println("High Nums sequential = " + s));
 
         // parallel stream 不按顺序处理值，适合数据量较大的集合
         Stream<Integer> parallelStream = list.parallelStream();
@@ -35,15 +35,9 @@ public class StreamExample {
 
     }
 
-    private static int sumStream(List<Integer> list){
+    private static int sumStream(List<Integer> list) {
         return list.stream().filter(n -> n > 10).mapToInt(i -> i).sum();
     }
-
-
-
-
-
-
 
     class State {
         Date startDate;

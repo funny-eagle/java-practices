@@ -4,6 +4,11 @@ import java.util.Date;
 import java.util.concurrent.*;
 
 public class FeatureTest {
+    public static void main(String[] args) {
+        ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
+        service.scheduleAtFixedRate(new Runner(), 0, 1, TimeUnit.SECONDS);
+    }
+
     private static class Caller implements Callable<Boolean> {
         @Override
         public Boolean call() {
@@ -35,10 +40,5 @@ public class FeatureTest {
                 e.printStackTrace();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
-        service.scheduleAtFixedRate(new Runner(), 0, 1, TimeUnit.SECONDS);
     }
 }

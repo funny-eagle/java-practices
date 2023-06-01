@@ -1,0 +1,33 @@
+package org.nocoder.designpattern.singleton;
+
+/**
+ * 单例模式
+ *
+ * @author jason
+ * @date 18/5/19.
+ */
+public class Singleton {
+    /**
+     * 自身提供对象的实例
+     */
+    private static Singleton singleton = new Singleton();
+
+    /**
+     * 私有构造方法
+     */
+    private Singleton() {
+    }
+
+    /**
+     * 对外提供获取唯一实例的方法
+     */
+    public static Singleton getInstance() {
+        return singleton;
+    }
+
+    public String showMessage() {
+        return "singleton";
+    }
+
+}
+

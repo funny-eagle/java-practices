@@ -14,6 +14,15 @@ package org.nocoder.algorithm;
  * @date 18/4/1.
  */
 public class BinarySearch {
+    public static void main(String[] args) {
+        BinarySearch bs = new BinarySearch();
+        int[] arr2 = {1, 2, 3, 4, 10, 10, 10, 10, 10};
+        System.out.println(bs.getPos(arr2, 10));
+
+        int[] arr = {10, 10, 10, 10, 10, 10, 10, 10};
+        System.out.println(bs.getPos(arr, 10));
+    }
+
     public int getPos(int[] arr, int val) {
         int len = arr.length;
         // 起始位置下标
@@ -36,14 +45,5 @@ public class BinarySearch {
             }
         }
         return arr[low] == val ? low : -1;
-    }
-
-    public static void main(String[] args) {
-        BinarySearch bs = new BinarySearch();
-        int[] arr2 = {1, 2, 3, 4, 10, 10, 10, 10, 10};
-        System.out.println(bs.getPos(arr2, 10));
-
-        int[] arr = {10, 10, 10, 10, 10, 10, 10, 10};
-        System.out.println(bs.getPos(arr, 10));
     }
 }

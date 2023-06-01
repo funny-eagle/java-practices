@@ -26,6 +26,6 @@ public class FilePath {
     private static void printPaths(File file) throws IOException {
         System.out.println("absolute path:" + file.getAbsolutePath());
         System.out.println("canonical path:" + file.getCanonicalPath());
-        System.out.println("Path:"+ file.getPath());
+        System.out.println("Path:" + file.getPath());
     }
 }

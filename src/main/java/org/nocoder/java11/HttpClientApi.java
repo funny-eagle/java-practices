@@ -4,7 +4,6 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.time.chrono.JapaneseEra;
 
 /**
  * Java 11 对 Java 9 中引入并在 Java 10 中进行了更新的 Http Client API 进行了标准化，
