@@ -10,7 +10,12 @@ package org.nocoder.algorithm;
  */
 public class Fibonacci {
 
-    public static int fibonacci(int n) {
+    /**
+     * 动态规划，滚动计算
+     * @param n
+     * @return
+     */
+    public static long fibonacci(int n) {
         if (n == 0) {
             return 0;
         }
@@ -21,5 +26,22 @@ public class Fibonacci {
             c = a + b;
         }
         return c;
+    }
+
+    /**
+     * 递归解法:非常低效
+     * @param n
+     * @return
+     */
+    @Deprecated
+    public static long fibRecursion(int n) {
+        if (n == 0) {
+            return 0;
+        }
+
+        if (n == 1) {
+            return 1;
+        }
+        return fibRecursion(n - 1) + fibRecursion(n - 2);
     }
 }

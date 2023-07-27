@@ -37,4 +37,55 @@ public class BinarySearch {
         }
         return arr[low] == val ? low : -1;
     }
+
+    /**
+     *
+     * @param arr
+     * @param v
+     * @return
+     */
+    public int bs(int[] arr, int v){
+        int len = arr.length;
+        int start = 0, end = len -1;
+
+        while(end > start){
+            int mid = (start + end) / 2;
+            System.out.println("中间位置的下标为："+mid);
+
+            if(v > arr[mid]){
+                System.out.println("目标值"+v+"大于中间值"+arr[mid]);
+                start = mid + 1;
+                System.out.println("将起始位置往 右 移动到中间值下标+1的位置，移动后的start="+start+",end="+end);
+            }
+
+            if(v < arr[mid]){
+                System.out.println("目标值"+v+"小于中间值"+arr[mid]);
+                end = mid - 1;
+                System.out.println("将终止位置往 左 移动到中间值下标-1的位置，移动后的start="+start+",end="+end);
+            }
+
+            if(v == arr[mid]){
+                // 找到了先不着急return，如果目标元素出现多次，需要返回第一次出现的位置
+                // 这里把终点end更新成中间值mid，再次循环
+
+                end = mid;
+                System.out.println("找到了先不着急return，如果目标元素出现多次，需要返回第一次出现的位置,这里把终点end更新成中间值mid,等循环结束, start="+start+", end="+end);
+            }
+        }
+
+        if(arr[end] == v){
+            System.out.println("目标值"+v+"在数组总第一次出现的位置下标为"+end);
+            return end;
+        }else{
+            System.out.println("目标值"+v+"不在数组中");
+            return -1;
+        }
+    }
+
+    public static void main(String[] args){
+        int[] arr = new int[]{1,2,4,5,5,6,7,8,9};
+        int v = 5;
+        BinarySearch b = new BinarySearch();
+        b.bs(arr, v);
+    }
 }
