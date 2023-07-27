@@ -86,6 +86,6 @@ public class BinarySearch {
         int[] arr = new int[]{1,2,4,5,5,6,7,8,9};
         int v = 5;
         BinarySearch b = new BinarySearch();
-        b.bs(arr, v);
+        System.out.println(b.bs(arr, v));
     }
 }
