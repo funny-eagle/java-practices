@@ -7,10 +7,10 @@ import java.util.Scanner;
  */
 public class SumInLoop {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int total = scanner.nextInt();
-        scanner.nextLine();
-        String data = scanner.nextLine();
+        Scanner input = new Scanner(System.in);
+        int total = input.nextInt();
+        input.nextLine();
+        String data = input.nextLine();
         int sum = 0;
         if (data != null && !"".equals(data)) {
             String[] s = data.split(" ");
@@ -20,5 +20,6 @@ public class SumInLoop {
             }
         }
         System.out.println(sum);
+        input.close();
     }
 }

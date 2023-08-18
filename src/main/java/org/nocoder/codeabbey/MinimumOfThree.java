@@ -10,14 +10,14 @@ import java.util.Scanner;
 public class MinimumOfThree {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int len = scanner.nextInt();
+        Scanner input = new Scanner(System.in);
+        int len = input.nextInt();
 
-        scanner.nextLine();
+        input.nextLine();
         
         String[] arr = new String[len];
         for (int i = 0; i < len; i++) {
-            arr[i] = scanner.nextLine();
+            arr[i] = input.nextLine();
         }
 
         for (String s : arr) {
@@ -34,6 +34,6 @@ public class MinimumOfThree {
             }
             System.out.print(min + " ");
         }
-
+        input.close();
     }
 }

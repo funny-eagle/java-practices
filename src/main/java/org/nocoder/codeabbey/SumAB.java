@@ -7,11 +7,12 @@ import java.util.Scanner;
  */
 public class SumAB {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        int a = input.nextInt();
+        int b = input.nextInt();
 
         System.out.println(a + b);
+        input.close();
     }
 }

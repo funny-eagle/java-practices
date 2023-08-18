@@ -7,14 +7,14 @@ import java.util.Scanner;
  */
 public class SumsInLoop {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int total = scanner.nextInt();
-        scanner.nextLine();
+        Scanner input = new Scanner(System.in);
+        int total = input.nextInt();
+        input.nextLine();
         System.out.println();
 
         String[] arr = new String[total];
         for (int i = 0; i < total; i++) {
-            arr[i] = scanner.nextLine();
+            arr[i] = input.nextLine();
         }
 
         for (int i = 0; i < arr.length; i++) {
@@ -27,6 +27,6 @@ public class SumsInLoop {
             System.out.print(sum + " ");
         }
 
-        scanner.close();
+        input.close();
     }
 }

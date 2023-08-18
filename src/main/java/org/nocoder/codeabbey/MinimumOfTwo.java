@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class MinimumOfTwo {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int total = sc.nextInt();
-        sc.nextLine();
+        Scanner input = new Scanner(System.in);
+        int total = input.nextInt();
+        input.nextLine();
 
         String[] arr = new String[total];
         for (int i = 0; i < total; i++) {
-            arr[i] = sc.nextLine();
+            arr[i] = input.nextLine();
         }
 
         for (String s : arr) {
@@ -28,6 +28,6 @@ public class MinimumOfTwo {
                 System.out.print(Integer.parseInt(numsArr[1]) + " ");
             }
         }
-        sc.close();
+        input.close();
     }
 }
