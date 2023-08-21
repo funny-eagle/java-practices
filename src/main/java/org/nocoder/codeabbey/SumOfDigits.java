@@ -17,10 +17,10 @@ public class SumOfDigits {
             int d = input.nextInt() * input.nextInt() + input.nextInt();
             int sum = 0;
             while (d != 0) {
-                int r = d / 10;
-                int y = d % 10;
-                d = r;
-                sum+=y;
+                int r = d / 10; // 商
+                int y = d % 10; // 余数
+                d = r; // 商作为下一次的被除数
+                sum += y;// 将每次得到的余数相加
             }
             sb.append(sum).append(" ");
         }
