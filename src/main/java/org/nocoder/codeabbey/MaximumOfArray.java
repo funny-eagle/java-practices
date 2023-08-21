@@ -26,6 +26,7 @@ public class MaximumOfArray {
                 min = cur;
         }
         System.out.println(max + " " + min);
+        input.close();
     }
 
 }
