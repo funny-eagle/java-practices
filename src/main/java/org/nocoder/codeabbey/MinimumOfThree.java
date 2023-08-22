@@ -11,20 +11,13 @@ public class MinimumOfThree {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int len = input.nextInt();
+        int n = input.nextInt();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int a = input.nextInt();
+            int b = input.nextInt();
+            int c = input.nextInt();
 
-        input.nextLine();
-        
-        String[] arr = new String[len];
-        for (int i = 0; i < len; i++) {
-            arr[i] = input.nextLine();
-        }
-
-        for (String s : arr) {
-            String[] str = s.split(" ");
-            int a = Integer.parseInt(str[0]);
-            int b = Integer.parseInt(str[1]);
-            int c = Integer.parseInt(str[2]);
             int min = a;
             if(min > b) {
                 min = b;
@@ -32,8 +25,9 @@ public class MinimumOfThree {
             if(min > c){
                 min = c;
             }
-            System.out.print(min + " ");
+            sb.append(min).append(" ");
         }
+        System.out.println(sb.toString());
         input.close();
     }
 }
