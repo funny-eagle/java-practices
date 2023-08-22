@@ -8,25 +8,13 @@ import java.util.Scanner;
 public class SumsInLoop {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int total = input.nextInt();
-        input.nextLine();
-        System.out.println();
-
-        String[] arr = new String[total];
-        for (int i = 0; i < total; i++) {
-            arr[i] = input.nextLine();
+        int n = input.nextInt();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int sum = input.nextInt() + input.nextInt();
+            sb.append(sum + " ");
         }
-
-        for (int i = 0; i < arr.length; i++) {
-            String[] nums = arr[i].split(" ");
-            int sum = 0;
-            for (int j = 0; j < nums.length; j++) {
-                int intValue = Integer.parseInt(nums[j]);
-                sum += intValue;
-            }
-            System.out.print(sum + " ");
-        }
-
+        System.out.println(sb);
         input.close();
     }
 }

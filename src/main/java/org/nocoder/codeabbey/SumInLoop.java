@@ -8,16 +8,10 @@ import java.util.Scanner;
 public class SumInLoop {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int total = input.nextInt();
-        input.nextLine();
-        String data = input.nextLine();
+        int n = input.nextInt();
         int sum = 0;
-        if (data != null && !"".equals(data)) {
-            String[] s = data.split(" ");
-
-            for (int i = 0; i < s.length; i++) {
-                sum += Integer.parseInt(s[i]);
-            }
+        for (int i = 0; i < n; i++) {
+            sum += input.nextInt();
         }
         System.out.println(sum);
         input.close();

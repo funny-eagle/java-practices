@@ -12,22 +12,20 @@ public class MinimumOfTwo {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int total = input.nextInt();
-        input.nextLine();
-
-        String[] arr = new String[total];
-        for (int i = 0; i < total; i++) {
-            arr[i] = input.nextLine();
-        }
-
-        for (String s : arr) {
-            String[] numsArr = s.split(" ");
-            if (Integer.parseInt(numsArr[0]) < Integer.parseInt(numsArr[1])) {
-                System.out.print(Integer.parseInt(numsArr[0]) + " ");
+        int n = input.nextInt();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int a = input.nextInt();
+            int b = input.nextInt();
+            int min;
+            if (a > b) {
+                min = b;
             } else {
-                System.out.print(Integer.parseInt(numsArr[1]) + " ");
+                min = a;
             }
+            sb.append(min).append(" ");
         }
+        System.out.println(sb);
         input.close();
     }
 }
