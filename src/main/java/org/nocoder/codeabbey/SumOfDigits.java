@@ -24,7 +24,7 @@ public class SumOfDigits {
             }
             sb.append(sum).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
         input.close();
     }
 }

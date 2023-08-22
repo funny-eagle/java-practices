@@ -16,7 +16,7 @@ public class FahrenheitToCelsius {
         for (int i = 0; i < n; i++) {
             sb.append(Math.round((input.nextInt() - 32) / 1.8)).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
         input.close();
     }
 }

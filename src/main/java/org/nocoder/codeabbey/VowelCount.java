@@ -17,13 +17,13 @@ public class VowelCount {
             int count = 0;
             //System.out.println("=="+str);
             for (int j = 0; j < str.length(); j++) {
-                String curr = str.substring(j, j+1);
-                if(curr.equals("a") || curr.equals("e") || curr.equals("i") || curr.equals("o") || curr.equals("u") || curr.equals("y")){
+                String curr = str.substring(j, j + 1);
+                if (curr.equals("a") || curr.equals("e") || curr.equals("i") || curr.equals("o") || curr.equals("u") || curr.equals("y")) {
                     count++;
                 }
             }
             sb.append(count).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }

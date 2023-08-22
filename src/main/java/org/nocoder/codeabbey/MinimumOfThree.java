@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * https://www.codeabbey.com/index/task_view/min-of-three--zh
+ *
  * @author yangjl
  * @date 2022年11月20日 22点37分
  */
@@ -19,15 +20,15 @@ public class MinimumOfThree {
             int c = input.nextInt();
 
             int min = a;
-            if(min > b) {
+            if (min > b) {
                 min = b;
             }
-            if(min > c){
+            if (min > c) {
                 min = c;
             }
             sb.append(min).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
         input.close();
     }
 }

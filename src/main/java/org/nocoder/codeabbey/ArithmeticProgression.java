@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * https://www.codeabbey.com/index/task_view/arithmetic-progression--zh
+ *
  * @author yangjl
  * @date 2023/8/21 16:57
  */
@@ -16,9 +17,9 @@ public class ArithmeticProgression {
             int A = input.nextInt();
             int B = input.nextInt();
             int N = input.nextInt();
-            int An = A + (N-1) * B;
-            sb.append(N*(A+An)/2).append(" ");
+            int An = A + (N - 1) * B;
+            sb.append(N * (A + An) / 2).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }

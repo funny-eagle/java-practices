@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * https://www.codeabbey.com/index/task_view/triangles--zh
+ *
  * @author yangjl
  * @date 2023/8/21 17:18
  */
@@ -17,13 +18,13 @@ public class Triangles {
             int b = input.nextInt();
             int c = input.nextInt();
 
-            if((a+b)>c && (a+c)>b && (b+c)>a){
+            if ((a + b) > c && (a + c) > b && (b + c) > a) {
                 sb.append("1");
-            }else{
+            } else {
                 sb.append("0");
             }
             sb.append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }

@@ -21,12 +21,12 @@ public class MedianOfThree {
             int mid = 0;
             if ((a > b && a < c) || (a > c && a < b)) {
                 mid = a;
-            }else if ((b > a && b < c) || (b > c && b < a)) {
+            } else if ((b > a && b < c) || (b > c && b < a)) {
                 mid = b;
-            }else{
+            } else {
                 mid = c;
             }
-            sb.append(mid + " ");
+            sb.append(mid).append(" ");
         }
         System.out.println(sb);
     }

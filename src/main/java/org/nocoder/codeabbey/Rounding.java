@@ -18,7 +18,7 @@ public class Rounding {
             sb.append(Math.round((float) input.nextInt() / input.nextInt())).append(" ");
         }
 
-        System.out.println(sb.toString());
+        System.out.println(sb);
         input.close();
     }
 }
