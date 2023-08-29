@@ -1,1 +1,0 @@
-Solve problems from [codeabbey](https://www.codeabbey.com).

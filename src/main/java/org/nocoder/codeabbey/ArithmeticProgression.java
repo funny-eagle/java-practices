@@ -21,5 +21,6 @@ public class ArithmeticProgression {
             sb.append(N * (A + An) / 2).append(" ");
         }
         System.out.println(sb);
+        input.close();
     }
 }

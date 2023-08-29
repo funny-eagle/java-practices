@@ -26,5 +26,6 @@ public class Triangles {
             sb.append(" ");
         }
         System.out.println(sb);
+        input.close();
     }
 }

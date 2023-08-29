@@ -25,5 +25,6 @@ public class VowelCount {
             sb.append(count).append(" ");
         }
         System.out.println(sb);
+        input.close();
     }
 }

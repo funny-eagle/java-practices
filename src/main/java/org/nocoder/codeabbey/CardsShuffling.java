@@ -23,6 +23,7 @@ public class CardsShuffling {
         for (String card : cards) {
             System.out.print(card + " ");
         }
+        input.close();
     }
 
     private static String[] initCards() {

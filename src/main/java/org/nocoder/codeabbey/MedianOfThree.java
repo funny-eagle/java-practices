@@ -29,5 +29,6 @@ public class MedianOfThree {
             sb.append(mid).append(" ");
         }
         System.out.println(sb);
+        input.close();
     }
 }
