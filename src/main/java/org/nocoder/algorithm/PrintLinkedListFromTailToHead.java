@@ -1,5 +1,7 @@
 package org.nocoder.algorithm;
 
+import org.nocoder.datastructure.ListNode;
+
 import java.util.ArrayList;
 import java.util.Stack;
 
